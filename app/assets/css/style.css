@@ -1,7 +1,19 @@
 body {
+	background-image: url("./backgounrd.jpg");
 	text-align: center;
 }
 
 h1 {
- font-size: 20mm;
+ font-size: 4em;
+ color: black;
+ background-color: gray;
+ padding: .8em;
+ margin: 0em;
+}
+h2 {
+	font-size: 2em;
+	color: black;
+	background-color: gray;
+	padding: .8em;
+	margin: 2em;
 }
