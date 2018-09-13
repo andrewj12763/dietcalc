@@ -33,28 +33,28 @@ h3 {
 	text-align: center;
 	vertical-align: middle;
 }
-.pageonebuttonone {
+.pageOneButtonOne {
 	background-color: lightgreen;
 }
-.pageonebuttontwo {
+.pageOneButtonTwo {
 	background-color: lightskyblue;
 }
-.pageonebuttonthree {
+.pageOneButtonThree {
 	background-color: red;
 }
-.pageonetextone {
+.pageOneTextOne {
 	color: lightgreen;
 	margin: .5em;
 }
-.pageonetexttwo {
+.pageOneTextTwo {
 	color: lightskyblue;
 	margin: .5em;
 }
-.pageonetextthree {
+.pageOneTextThree {
 	color: red;
 	margin: .5em;
 }
-.pageonebuttonfour {
+.pageOneButtonFour {
 	font-size: 1.5em;
 	color: black;
 	background-image: url("./divback.jpg");
@@ -68,7 +68,7 @@ h3 {
 	height: 2em;
 	text-align: center;
 }
-.datadesign {
+.dataDesign {
 	margin: .5em;
 	font-size: 1em;
 	color: black;

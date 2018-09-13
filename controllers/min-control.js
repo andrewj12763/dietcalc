@@ -9,10 +9,16 @@ router.get('/resources', (req, res) => {
   res.render('resources');
 });
 
+router.get('/makemehealthy', (req, res) => {
+  res.render('makemehealthy');
+});
 
+router.get('/helpmeloseweight', (req, res) => {
+  res.render('helpmeloseweight');
+});
 
-router.get('/page3', (req, res) => {
-  res.render('page3');
+router.get('/helpmegainweight', (req, res) => {
+  res.render('helpmegainweight');
 });
 
 module.exports = router
