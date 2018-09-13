@@ -5,8 +5,8 @@ router.get('/', (req, res) => {
   res.render('home');
 });
 
-router.get('/page2', (req, res) => {
-  res.render('page2');
+router.get('/resources', (req, res) => {
+  res.render('resources');
 });
 
 
