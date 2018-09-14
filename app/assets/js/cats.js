@@ -7,8 +7,8 @@ $("#pageOneButtonResources").on("click", function() {
 
 // This is the resource appender-------------------------------------------------------------------------------------------------------------
 
-var title = ["title one", "title two", "title three"];
-var Link = ['https://www.youtube.com/', "link two", "link three"];
+var title = ["Body fat equation: ", "BMI Refrence: ", "title three"];
+var Link = ['https://www.livestrong.com/article/102670-formula-calculate-body-fat-percentage/', 'https://www.livestrong.com/article/160060-the-ideal-height-weight-bmi/', "link three"];
 
 
 for (var i = 0; i < title.length; i++) {
