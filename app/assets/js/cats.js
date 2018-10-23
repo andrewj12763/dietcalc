@@ -27,6 +27,23 @@ $("#pageOneButtonMYH").on("click", function() {
 	event.preventDefault();
 });
 
+var myhweight= 0;
+var myhheight= 0;
+var myhage= 0;
+
+$("#myhCalc").on("click", function() {
+
+ myhweight = document.getElementById("myhWeight").value;
+ myhheight = document.getElementById("myhHeight").value;
+ myhage = document.getElementById("myhAge").value;
+
+ console.log(myhweight, " " , myhheight, "" , myhage)
+
+
+});
+
+
+
 
 // This is the code for Help you lose weight------------------------------------------------------------------------------------------------------
 $("#pageOneButtonHYLW").on("click", function() {
