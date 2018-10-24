@@ -37,8 +37,14 @@ $("#myhCalc").on("click", function() {
  myhheight = document.getElementById("myhHeight").value;
  myhage = document.getElementById("myhAge").value;
 
- console.log(myhweight, " " , myhheight, "" , myhage)
+ var lbsTokg = myhweight / 2.204;
+ var intocm = myhheight / 2.54;
+ var myhCals = 66.5 + 13.8 * lbsTokg + 5 * intocm + 6.8 * myhage;
 
+ console.log(myhweight, " " , myhheight, "" , myhage)
+$("#myhCals").append(myhCals);
+
+console.log(myhCals);
 
 });
 
