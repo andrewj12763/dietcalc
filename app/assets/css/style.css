@@ -99,6 +99,7 @@ h7 {
 	cursor:pointer;
 	height: 2em;
 	text-align: center;
+	float: left;
 }
 .nextbtn {
 	font-size: 1.5em;
