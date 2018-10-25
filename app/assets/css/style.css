@@ -113,4 +113,19 @@ h7 {
 	cursor:pointer;
 	height: 2em;
 	text-align: center;
+	float: right;
+}
+/* myheathly css ------------------------------------- */
+
+#myhPageOneNext {
+	font-weight: bold;
+	text-align: center;
+}
+#myhPageOneBack {
+	font-weight: bold;
+	text-align: center;
+}
+
+input {
+	float: right;
 }

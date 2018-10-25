@@ -2,20 +2,29 @@ console.log("Js file is working");
 // This is for the resourse button on the home page------------------------------------------------------------------------------------------
 $("#pageOneButtonResources").on("click", function() {
   window.location.href = "resources";
-	event.preventDefault();
+  event.preventDefault();
 });
 
 // This is the resource appender-------------------------------------------------------------------------------------------------------------
 
 var title = ["Body fat equation: ", "BMI Refrence: ", "title three"];
-var Link = ['https://www.livestrong.com/article/102670-formula-calculate-body-fat-percentage/', 'https://www.livestrong.com/article/160060-the-ideal-height-weight-bmi/', "link three"];
-
+var Link = [
+  "https://www.livestrong.com/article/102670-formula-calculate-body-fat-percentage/",
+  "https://www.livestrong.com/article/160060-the-ideal-height-weight-bmi/",
+  "link three"
+];
 
 for (var i = 0; i < title.length; i++) {
-  var eachrow = "<div class='row dataDesign'><h5> " + title[i] + "     <a target='_blank' rel='noopener noreferrer' href='" + Link[i] + "'>View Source Page</a>" + "</h5></div>";
+  var eachrow =
+    "<div class='row dataDesign'><h5> " +
+    title[i] +
+    "     <a target='_blank' rel='noopener noreferrer' href='" +
+    Link[i] +
+    "'>View Source Page</a>" +
+    "</h5></div>";
 
   function addresources() {
-		$("#resourceLogic").append(eachrow);
+    $("#resourceLogic").append(eachrow);
   }
 
   addresources();
@@ -24,42 +33,51 @@ for (var i = 0; i < title.length; i++) {
 // This is the code for Make yourself healthy------------------------------------------------------------------------------------------------------
 $("#pageOneButtonMYH").on("click", function() {
   window.location.href = "makemehealthy";
-	event.preventDefault();
+  event.preventDefault();
 });
 
-var myhweight= 0;
-var myhheight= 0;
-var myhage= 0;
+var myhweight = 0;
+var myhheight = 0;
+var myhage = 0;
 
 $("#myhCalc").on("click", function() {
+  myhweight = document.getElementById("myhWeight").value;
+  myhheight = document.getElementById("myhHeight").value;
+  myhage = document.getElementById("myhAge").value;
 
- myhweight = document.getElementById("myhWeight").value;
- myhheight = document.getElementById("myhHeight").value;
- myhage = document.getElementById("myhAge").value;
+  var lbsTokg = myhweight / 2.204;
+  var intocm = myhheight / 2.54;
+  var myhCals = 66.5 + 13.8 * lbsTokg + 5 * intocm + 6.8 * myhage;
 
- var lbsTokg = myhweight / 2.204;
- var intocm = myhheight / 2.54;
- var myhCals = 66.5 + 13.8 * lbsTokg + 5 * intocm + 6.8 * myhage;
+  //  console.log(myhweight, " " , myhheight, "" , myhage)
+  $("#myhCals").val(Math.round(myhCals));
 
- console.log(myhweight, " " , myhheight, "" , myhage)
-$("#myhCals").append(myhCals);
+  $("#myhPro").val(Math.round((myhCals * 0.25) / 4));
 
-console.log(myhCals);
+  $("#myhCarbs").val(Math.round((myhCals * 0.5) / 4));
 
+  $("#myhFat").val(Math.round((myhCals * 0.25) / 9));
+
+  // console.log(myhCals);
 });
 
-
-
+$("#myhPageOneBack").on("click", function() {
+  window.location.href = "/";
+  event.preventDefault();
+});
+// $("#myhPageOneNext").on("click", function() {
+//   window.location.href = "resources";
+// 	event.preventDefault();
+// });
 
 // This is the code for Help you lose weight------------------------------------------------------------------------------------------------------
 $("#pageOneButtonHYLW").on("click", function() {
   window.location.href = "helpmeloseweight";
-	event.preventDefault();
+  event.preventDefault();
 });
-
 
 // This is the code for Make you gain weight------------------------------------------------------------------------------------------------------
 $("#pageOneButtonHYGW").on("click", function() {
   window.location.href = "helpmegainweight";
-	event.preventDefault();
+  event.preventDefault();
 });
