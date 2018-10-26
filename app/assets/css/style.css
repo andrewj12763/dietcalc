@@ -85,6 +85,7 @@ h6 {
 h7 {
 	color: black;
 	font-size: 1.5em;
+
 }
 .backbtn {
 	font-size: 1.5em;
@@ -121,12 +122,33 @@ h7 {
 #myhPageOneNext {
 	font-weight: bold;
 	text-align: center;
+	padding-bottom: 1.2em;
 }
 #myhPageOneBack {
 	font-weight: bold;
 	text-align: center;
+	padding-bottom: 1.2em;
 }
 
 input {
 	float: right;
+}
+
+#myhCalc {
+	font-size: 1.5em;
+	color: black;
+	padding: .8em;
+	margin: 1em;
+	border-radius: 25px;
+	border: none;
+	cursor:pointer;
+	height: 2em;
+	text-align: center;
+	font-weight: bold;
+	background-image: url("./divback.jpg");
+	padding-bottom: 2.2em;
+}
+
+#myhTextSupport {
+	margin: 1.5em;
 }

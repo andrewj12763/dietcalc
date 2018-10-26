@@ -4,38 +4,46 @@
 	</div>
 	<div class="row">
 		<div class="col-md-6 infotable">
-			<h6>Please enter in your information here:</h6>
-			<br>
-			<form onsubmit="event.preventDefault()">
-				<h7>Weight(lbs): </h7>
-				<input type="number" value="0" id="myhWeight" name="Weight(Lbs)">
+			<div class="row">
+				<h6>Please enter in your information here:</h6>
 				<br>
-				<h7>Height(in): </h7>
-				<input type="number" value="0" id="myhHeight" name="Height(in)">
-				<br>
-				<h7>Age: </h7>
-				<input type="number" value="0" id="myhAge" name="age"><br>
-				<input type="submit" value="Submit" id="myhCalc">
-			</form>
+				<form onsubmit="event.preventDefault()">
+					<h7>Weight(lbs): </h7>
+					<input type="number" value="0" id="myhWeight" name="Weight(Lbs)">
+					<br>
+					<h7>Height(in): </h7>
+					<input type="number" value="0" id="myhHeight" name="Height(in)">
+					<br>
+					<h7>Age: </h7>
+					<input type="number" value="0" id="myhAge" name="Age">
+					<br>
+				</form>
+			</div>
+			<div class="row">
+				<button id="myhCalc">Calculate</button>
+			</div>
 		</div>
 		<div class="col-md-6 infotable">
-			<h6>Here are your results:</h6>
-			<br>
-			<form>
-				<h7>Calories needed: </h7>
-				<input type="number" value="0" id="myhCals" name="Cals">
+			<div class="row">
+				<h6>Here are your results:</h6>
 				<br>
-				<h7>Protein needed(gr): </h7>
-				<input type="number" value="0" id="myhPro" name="Pro">
-				<br>
-				<h7>Carbohydrates needed(gr): </h7>
-				<input type="number" value="0" id="myhCarbs" name="carbs">
-				<br>
-				<h7>Fat needed(gr): </h7>
-				<input type="number" value="0" id="myhFat" name="fat">
-			</form>
-			<h7>Your Vitamins will be show latter on.</h7>
-
+				<form>
+					<h7>Calories needed: </h7>
+					<input type="number" value="0" id="myhCals" name="Cals">
+					<br>
+					<h7>Protein Per Day(gr): </h7>
+					<input type="number" value="0" id="myhPro" name="Pro">
+					<br>
+					<h7>Carbs Per Day(gr): </h7>
+					<input type="number" value="0" id="myhCarbs" name="carbs">
+					<br>
+					<h7>Fat Per Day(gr): </h7>
+					<input type="number" value="0" id="myhFat" name="fat">
+				</form>
+			</div>
+			<div id="myhTextSupport" class="row">
+				<h7>Your Vitamins will be show latter on.</h7>
+			</div>
 		</div>
 	</div>
 	<div class="row">
