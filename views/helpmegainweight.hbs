@@ -2,4 +2,57 @@
 	<div class="row">
 		<h2>Help You Gain Weight</h2>
 	</div>
+	<div class="row">
+		<div class="col-md-6 infotable">
+			<div class="row">
+				<h6>Please enter in your information here:</h6>
+				<br>
+				<form onsubmit="event.preventDefault()">
+					<h7>Weight(lbs): </h7>
+					<input type="number" value="0" id="hgwWeight" name="Weight(Lbs)">
+					<br>
+					<h7>Height(in): </h7>
+					<input type="number" value="0" id="hgwHeight" name="Height(in)">
+					<br>
+					<h7>Age: </h7>
+					<input type="number" value="0" id="hgwAge" name="Age">
+					<br>
+				</form>
+			</div>
+			<div class="row">
+				<button id="hgwCalc">Calculate</button>
+			</div>
+		</div>
+		<div class="col-md-6 infotable">
+			<div class="row">
+				<h6>Here are your results:</h6>
+				<br>
+				<form>
+					<h7>Calories needed: </h7>
+					<input type="number" value="0" id="hgwCals" name="Cals">
+					<br>
+					<h7>Protein Per Day(gr): </h7>
+					<input type="number" value="0" id="hgwPro" name="Pro">
+					<br>
+					<h7>Carbs Per Day(gr): </h7>
+					<input type="number" value="0" id="hgwCarbs" name="carbs">
+					<br>
+					<h7>Fat Per Day(gr): </h7>
+					<input type="number" value="0" id="hgwFat" name="fat">
+				</form>
+			</div>
+			<div id="myhTextSupport" class="row">
+				<h7>Your Vitamins will be show latter on.</h7>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 backbtn">
+			<h5 id="myhPageOneBack">Backs</h5>
+		</div>
+		<div class="col-md-8"></div>
+		<div class="col-md-2 nextbtn">
+			<h5 id="hgwPageOneNext">Next</h5>
+		</div>
+	</div>
 </div>

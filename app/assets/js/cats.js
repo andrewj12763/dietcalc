@@ -76,8 +76,58 @@ $("#pageOneButtonHYLW").on("click", function() {
   event.preventDefault();
 });
 
+var hlwweight = 0;
+var hlwheight = 0;
+var hlwage = 0;
+
+$("#hlwCalc").on("click", function() {
+  hlwweight = document.getElementById("hlwWeight").value;
+  hlwheight = document.getElementById("hlwHeight").value;
+  hlwage = document.getElementById("hlwAge").value;
+
+  var lbsTokg = hlwweight / 2.204;
+  var intocm = hlwheight / 2.54;
+  var hlwCals = 66.5 + 13.8 * lbsTokg + 5 * intocm + 6.8 * myhage;
+
+  //  console.log(myhweight, " " , myhheight, "" , myhage)
+  $("#hlwCals").val(Math.round(hlwCals));
+
+  $("#hlwPro").val(Math.round((hlwCals * 0.40) / 4));
+
+  $("#hlwCarbs").val(Math.round((hlwCals * 0.40) / 4));
+
+  $("#hlwFat").val(Math.round((hlwCals * 0.20) / 9));
+
+  // console.log(myhCals);
+});
+
 // This is the code for Make you gain weight------------------------------------------------------------------------------------------------------
 $("#pageOneButtonHYGW").on("click", function() {
   window.location.href = "helpmegainweight";
   event.preventDefault();
+});
+
+var hgwweight = 0;
+var hgwheight = 0;
+var hgwage = 0;
+
+$("#hgwCalc").on("click", function() {
+  hgwweight = document.getElementById("hgwWeight").value;
+  hgwheight = document.getElementById("hgwHeight").value;
+  hgwage = document.getElementById("hgwAge").value;
+
+  var lbsTokg = hgwweight / 2.204;
+  var intocm = hgwheight / 2.54;
+  var hgwCals = 66.5 + 13.8 * lbsTokg + 5 * intocm + 6.8 * hgwage;
+
+  //  console.log(myhweight, " " , myhheight, "" , myhage)
+  $("#hgwCals").val(Math.round(hgwCals));
+
+  $("#hgwPro").val(Math.round((hgwCals * 0.375) / 4));
+
+  $("#hgwCarbs").val(Math.round((hgwCals * 0.375) / 4));
+
+  $("#hgwFat").val(Math.round((hgwCals * 0.25) / 9));
+
+  // console.log(myhCals);
 });
