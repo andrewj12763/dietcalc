@@ -65,10 +65,11 @@ $("#myhPageOneBack").on("click", function() {
   window.location.href = "/";
   event.preventDefault();
 });
-// $("#myhPageOneNext").on("click", function() {
-//   window.location.href = "resources";
-// 	event.preventDefault();
-// });
+
+$("#myhPageOneNext").on("click", function() {
+  window.location.href = "mmh2";
+	event.preventDefault();
+});
 
 // This is the code for Help you lose weight------------------------------------------------------------------------------------------------------
 $("#pageOneButtonHYLW").on("click", function() {
@@ -101,6 +102,16 @@ $("#hlwCalc").on("click", function() {
   // console.log(myhCals);
 });
 
+$("#myhPageOneBack").on("click", function() {
+  window.location.href = "/";
+  event.preventDefault();
+});
+
+$("#hlwPageOneNext").on("click", function() {
+  window.location.href = "hlw2";
+	event.preventDefault();
+});
+
 // This is the code for Make you gain weight------------------------------------------------------------------------------------------------------
 $("#pageOneButtonHYGW").on("click", function() {
   window.location.href = "helpmegainweight";
@@ -131,3 +142,45 @@ $("#hgwCalc").on("click", function() {
 
   // console.log(myhCals);
 });
+
+$("#myhPageOneBack").on("click", function() {
+  window.location.href = "/";
+  event.preventDefault();
+});
+
+$("#hgwPageOneNext").on("click", function() {
+  window.location.href = "hgw2";
+	event.preventDefault();
+});
+
+// mmh2--------------------------------------------------------------------------------------------------------------------
+$("#myhPageOneBack").on("click", function() {
+  window.location.href = "makemehealthy";
+  event.preventDefault();
+});
+
+// $("#hgwPageOneNext").on("click", function() {
+//   window.location.href = "hgw2";
+// 	event.preventDefault();
+// });
+
+// hlw2--------------------------------------------------------------------------------------------------------------------
+$("#myhPageOneBack").on("click", function() {
+  window.location.href = "helpmeloseweight";
+  event.preventDefault();
+});
+
+// $("#hgwPageOneNext").on("click", function() {
+//   window.location.href = "hgw2";
+// 	event.preventDefault();
+// });
+// mgw2--------------------------------------------------------------------------------------------------------------------
+$("#myhPageOneBack").on("click", function() {
+  window.location.href = "helpmegainweight";
+  event.preventDefault();
+});
+
+// $("#hgwPageOneNext").on("click", function() {
+//   window.location.href = "hgw2";
+// 	event.preventDefault();
+// });
