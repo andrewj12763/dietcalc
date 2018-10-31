@@ -154,10 +154,17 @@ $("#hgwPageOneNext").on("click", function() {
 });
 
 // mmh2--------------------------------------------------------------------------------------------------------------------
-$("#myhPageOneBack").on("click", function() {
+$("#myh2PageTwoBack").on("click", function() {
   window.location.href = "makemehealthy";
   event.preventDefault();
 });
+
+$("#myh2PageTwoNext").on("click", function() {
+ 
+console.log(myhweight);
+});
+
+
 
 // $("#hgwPageOneNext").on("click", function() {
 //   window.location.href = "hgw2";
@@ -165,7 +172,7 @@ $("#myhPageOneBack").on("click", function() {
 // });
 
 // hlw2--------------------------------------------------------------------------------------------------------------------
-$("#myhPageOneBack").on("click", function() {
+$("#hlw2PageTwoBack").on("click", function() {
   window.location.href = "helpmeloseweight";
   event.preventDefault();
 });
@@ -175,7 +182,7 @@ $("#myhPageOneBack").on("click", function() {
 // 	event.preventDefault();
 // });
 // mgw2--------------------------------------------------------------------------------------------------------------------
-$("#myhPageOneBack").on("click", function() {
+$("#mgw2PageTwoBack").on("click", function() {
   window.location.href = "helpmegainweight";
   event.preventDefault();
 });
